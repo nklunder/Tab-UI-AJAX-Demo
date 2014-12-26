@@ -1,0 +1,41 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 1rem auto;
+  max-width: 40rem;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-right: .1rem;
+  padding: .6rem 2rem .2rem;
+  cursor: pointer;
+  background: #D9D9D9;
+  border-radius: .6rem .6rem 0 0;
+}
+
+.selected {
+  color: #FFF;
+  background: #339DD6;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+  background: #339DD6;
+  min-height: 18rem;
+  border-radius: 0 .6rem .6rem .6rem;
+}
+
+p {
+  padding: 1.4rem;
+  margin-top: 0;
+}
