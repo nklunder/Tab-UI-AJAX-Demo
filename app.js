@@ -4,13 +4,13 @@ var cache = {},
 $(document).ready(function () {
   $.get('pages/tab1.html', function (data) {
     $displayArea.html(data);
-    cache[page] = data;
+    cache.tab1 = data;
   });
 });
 
 $('.ajax-tabs li').on('click', function () {
   var $displayArea = $('.display-area'),
-      page = $(this).attr('data-tab') || 'tab1';
+      page = $(this).attr('data-tab');
 
   $(this).addClass('selected').siblings().removeClass('selected');
 
