@@ -4,7 +4,7 @@ $('.ajax-tabs li').on('click', function () {
   var $displayArea = $('.display-area'),
       page = $(this).data('tab');
 
-  $(this).toggleClass('selected').siblings().removeClass('selected');
+  $(this).addClass('selected').siblings().removeClass('selected');
 
   if (cache[page]) {
     $displayArea.html(cache[page]);
